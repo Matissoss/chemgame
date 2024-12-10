@@ -1,0 +1,65 @@
+@font-face{
+	font-family: std;
+	src: url("Roboto-Regular.ttf");
+}
+
+:root{
+	--background : white;
+	--text: black;
+}
+body{
+	background-color: var(--background);
+	color: var(--text);
+	font-family: std;
+	text-align: center;
+}
+p{
+	font-size: 175%;
+	font-weight: 100;
+}
+h2{
+	font-family: std;
+}
+main{
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	align-items:center;
+	justify-items:center;
+	margin: auto;
+	text-align: center;
+}
+row{
+	display: flex;
+	flex-direction: row;
+}
+row button{
+	font-family: std;
+	width: 15vw;
+	border: 0.4vh solid var(--text);
+	border-radius: 1vw;
+	margin: 0.1vw;
+	font-size: 150%;
+	font-weight: 900;
+	background-color: var(--background);
+	color: var(--text);
+	height: 12vh;
+	transition: 0.2s all;
+}
+row button:hover{
+	cursor:pointer;
+	background-color: var(--text);
+	color: var(--background);
+}
+#element{
+	text-align: center;
+	font-size: 550%;
+}
+@media only screen and (max-width: 900px){
+	row button{
+		width: 25vw;
+		border: 1.25vw solid var(--text);
+		border-radius: 5vw;
+		height: 30vh;
+	}
+}
